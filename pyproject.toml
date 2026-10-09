@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wealth-advisor-agent"
+version = "1.0.0"
+description = "Mini Multi-Agent Wealth Advisor Assistant"
+authors = [{ name = "AI Systems Engineer" }]
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.1.0",
+    "httpx>=0.26.0",
+    "langgraph>=0.0.20",
+    "groq>=0.4.0",
+    "sentence-transformers>=2.3.0",
+    "chromadb>=0.4.22"
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

@@ -1,0 +1,41 @@
+[
+  {
+    "client_id": "C1001",
+    "income": 180000,
+    "monthly_expenses": 85000,
+    "risk_profile": "moderate",
+    "transactions": [
+      { "id": "T001", "date": "2026-09-01", "amount": -1000, "category": "groceries", "description": "Supermarket" },
+      { "id": "T002", "date": "2026-09-03", "amount": -1500, "category": "utilities", "description": "Electric & Water" },
+      { "id": "T003", "date": "2026-09-10", "amount": -2000, "category": "dining", "description": "Restaurants" },
+      { "id": "T004", "date": "2026-09-15", "amount": -1800, "category": "transportation", "description": "Fuel & Metro" },
+      { "id": "T005", "date": "2026-09-22", "amount": -2200, "category": "shopping", "description": "Retail purchases" }
+    ]
+  },
+  {
+    "client_id": "C1002",
+    "income": 250000,
+    "monthly_expenses": 120000,
+    "risk_profile": "aggressive",
+    "transactions": [
+      { "id": "T101", "date": "2026-09-01", "amount": -1000, "category": "groceries", "description": "Supermarket" },
+      { "id": "T102", "date": "2026-09-05", "amount": -1500, "category": "dining", "description": "Business Dinners" },
+      { "id": "T103", "date": "2026-09-12", "amount": -2000, "category": "utilities", "description": "Home Services" },
+      { "id": "T104", "date": "2026-09-18", "amount": -1800, "category": "entertainment", "description": "Events" },
+      { "id": "T105", "date": "2026-09-20", "amount": -45000, "category": "travel", "description": "International Luxury Booking" }
+    ]
+  },
+  {
+    "client_id": "C1003",
+    "income": 90000,
+    "monthly_expenses": 88000,
+    "risk_profile": "conservative",
+    "transactions": [
+      { "id": "T201", "date": "2026-09-01", "amount": -15000, "category": "shopping", "description": "Designer Clothes" },
+      { "id": "T202", "date": "2026-09-04", "amount": -22000, "category": "shopping", "description": "Luxury Watch" },
+      { "id": "T203", "date": "2026-09-10", "amount": -18000, "category": "shopping", "description": "Electronics Store" },
+      { "id": "T204", "date": "2026-09-15", "amount": -12000, "category": "shopping", "description": "Jewelry Shop" },
+      { "id": "T205", "date": "2026-09-22", "amount": -18000, "category": "entertainment", "description": "VIP Lounge" }
+    ]
+  }
+]

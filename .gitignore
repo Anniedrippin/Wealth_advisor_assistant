@@ -1,0 +1,39 @@
+# Environment & Secrets - DO NOT COMMIT SECRETS
+.env
+.env.local
+.env.*
+!.env.example
+
+# Python Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache & Build
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Database & Local Vector Store
+*.db
+*.sqlite
+*.sqlite3
+wealth_advisor.db
+data/chroma_db/
+data/*.db
+
+# Logs & Temporary Files
+*.log
+logs/
+
+# IDE & System Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,29 @@
+{
+  "C1001": {
+    "client_id": "C1001",
+    "name": "Sarah Connor",
+    "age": 38,
+    "occupation": "Technology Professional",
+    "existing_products": ["mutual_fund", "fixed_deposit"],
+    "risk_profile": "moderate",
+    "financial_goals": ["retirement", "house_purchase"]
+  },
+  "C1002": {
+    "client_id": "C1002",
+    "name": "Marcus Vance",
+    "age": 45,
+    "occupation": "Corporate Executive",
+    "existing_products": ["equity_portfolio", "private_wealth"],
+    "risk_profile": "aggressive",
+    "financial_goals": ["wealth_preservation", "estate_planning"]
+  },
+  "C1003": {
+    "client_id": "C1003",
+    "name": "Elena Rostova",
+    "age": 29,
+    "occupation": "Freelance Architect",
+    "existing_products": ["savings_account"],
+    "risk_profile": "conservative",
+    "financial_goals": ["emergency_fund", "debt_reduction"]
+  }
+}

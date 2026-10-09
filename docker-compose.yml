@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  mock_crm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: uvicorn mock_crm.main:app --host 0.0.0.0 --port 8001
+    ports:
+      - "8001:8001"
+    environment:
+      - APP_ENV=development
+
+  wealth_advisor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=development
+      - CRM_BASE_URL=http://mock_crm:8001
+      - DATABASE_URL=sqlite:///./data/wealth_advisor.db
+      - GROQ_API_KEY=${GROQ_API_KEY:-}
+      - GROQ_MODEL=${GROQ_MODEL:-llama-3.1-8b-instant}
+    depends_on:
+      - mock_crm
+    volumes:
+      - ./data:/app/data
+
+  streamlit_ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: streamlit run streamlit_app/app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE_URL=http://wealth_advisor:8000
+    depends_on:
+      - wealth_advisor
